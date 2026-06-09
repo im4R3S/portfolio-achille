@@ -5,7 +5,7 @@ const links = [
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/achille-balme/",
   },
   {
     label: "Email",

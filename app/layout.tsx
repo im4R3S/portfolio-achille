@@ -14,8 +14,12 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Achille Balme | Software Developer",
-  description:
-    "Portfolio of Achille Balme, software developer from Switzerland focused on application development, automation and modern web technologies.",
+  description: "Portfolio of Achille Balme, software developer from Switzerland focused on application development, automation and modern web technologies.",
+  icons: {
+    icon: "/logo.svg",
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
   keywords: [
     "Achille Balme",
     "Software Developer",

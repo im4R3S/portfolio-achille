@@ -39,7 +39,7 @@ export default function Hero() {
           <a href="https://github.com/im4R3S" target="_blank" rel="noreferrer" className="transition hover:text-white">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="transition hover:text-white">
+          <a href="https://www.linkedin.com/in/achille-balme/" target="_blank" rel="noreferrer" className="transition hover:text-white">
             LinkedIn
           </a>
           <a href="mailto:achille.balme@gmail.com" className="transition hover:text-white">
