@@ -15,13 +15,16 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-900 px-6 py-10">
+    <footer className="border-t border-zinc-900 px-6 py-16">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-lg font-semibold tracking-tight text-white">
             Achille Balme
           </p>
-          <p className="mt-2 text-sm text-zinc-500">Software Developer</p>
+          <p className="mt-2 max-w-md text-sm leading-6 text-zinc-500">
+            Software Developer based in Switzerland, focused on building
+            useful software, automation tools and modern web applications.
+          </p>
         </div>
 
         <div className="flex flex-col gap-4 md:items-end">
@@ -39,10 +42,10 @@ export default function Footer() {
             ))}
           </div>
 
-          <p className="text-sm text-zinc-600">
-            © 2026 Achille Balme. Built with Next.js, TypeScript, Tailwind CSS
-            and Vercel.
-          </p>
+          <div className="text-sm text-zinc-600 md:text-right">
+            <p>Built with Next.js, TypeScript, Tailwind CSS and Vercel.</p>
+            <p className="mt-1">© 2026 Achille Balme.</p>
+          </div>
         </div>
       </div>
     </footer>

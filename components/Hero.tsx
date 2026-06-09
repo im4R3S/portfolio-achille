@@ -14,11 +14,7 @@ export default function Hero() {
           Achille Balme
         </h1>
 
-        <p className="mt-5 text-2xl text-zinc-300">
-          Software Developer
-        </p>
-
-        <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-zinc-500">
+        <p className="mx-auto mt-8 max-w-2xl text-lg leading-8 text-zinc-400">
           Building useful software, automating processes and solving real-world
           business problems through clean and maintainable digital solutions.
         </p>
@@ -49,23 +45,6 @@ export default function Hero() {
           <a href="mailto:achille.balme@gmail.com" className="transition hover:text-white">
             Email
           </a>
-        </div>
-
-        <div className="mx-auto mt-14 grid max-w-3xl gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:border-zinc-600">
-            <p className="text-2xl font-bold">JLC</p>
-            <p className="mt-1 text-sm text-zinc-500">Industrial IT experience</p>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:border-zinc-600">
-            <p className="text-2xl font-bold">CFC</p>
-            <p className="mt-1 text-sm text-zinc-500">Application development</p>
-          </div>
-
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:border-zinc-600">
-            <p className="text-2xl font-bold">2025</p>
-            <p className="mt-1 text-sm text-zinc-500">Certified developer</p>
-          </div>
         </div>
 
         <a
