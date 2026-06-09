@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# Achille Balme — Portfolio
+
+Personal portfolio built with **Next.js**, **TypeScript**, **Tailwind CSS** and deployed on **Vercel**.
+
+The goal of this project is to present my profile, technical background, professional experience and selected projects in a clean, modern and maintainable way.
+
+## Overview
+
+This portfolio highlights:
+
+- my background as a software developer from Switzerland;
+- my CFC in application development;
+- my professional experience at Jaeger-LeCoultre;
+- selected technical and entrepreneurial projects;
+- the modern web technologies I am currently using and improving.
+
+## Tech Stack
+
+- **Next.js** — React framework used for the application structure and routing
+- **React** — component-based UI development
+- **TypeScript** — typed JavaScript for safer and more maintainable code
+- **Tailwind CSS** — utility-first styling and responsive design
+- **Framer Motion** — subtle section reveal animations
+- **Vercel** — hosting and automatic deployment
+- **Git / GitHub** — version control and repository hosting
+
+## Features
+
+- Responsive one-page portfolio
+- Smooth scrolling navigation
+- Back-to-top button
+- Animated section reveals
+- Custom favicon
+- SEO metadata
+- Structured sections: Hero, About, Skills, Projects, Contact and Footer
+
+## Project Structure
+
+```txt
+app/
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+components/
+├── About.tsx
+├── Contact.tsx
+├── Footer.tsx
+├── Hero.tsx
+├── MotionSection.tsx
+├── Navbar.tsx
+├── Projects.tsx
+└── Skills.tsx
+
+public/
+└── logo.svg
+```
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the local development URL:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```txt
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The project is deployed with **Vercel**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The workflow is:
 
-## Deploy on Vercel
+```txt
+dev branch  → preview deployment
+main branch → production deployment
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Development is done on the `dev` branch. Once the version is stable, it is merged into `main` to trigger the production deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Purpose
+
+This project is not only a personal portfolio, but also a way to practice and demonstrate a modern frontend workflow using Next.js, TypeScript, Tailwind CSS, GitHub and Vercel.
+
+## Author
+
+**Achille Balme**
+Software Developer — Switzerland
+
+- GitHub: https://github.com/im4R3S
+- Email: achille.balme@gmail.com
