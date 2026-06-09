@@ -1,8 +1,9 @@
 export default function Hero() {
   return (
-    <main className="relative flex min-h-[90vh] items-center justify-center overflow-hidden px-6 pt-24">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(63,63,70,0.35),transparent_45%)]" />
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+    <main id="top" className="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-[#09090b] px-6 pt-24">
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(63,63,70,0.32),transparent_55%)]" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:linear-gradient(to_bottom,black_0%,black_45%,rgba(0,0,0,0.45)_70%,transparent_100%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-b from-transparent to-[#09090b]" />
 
       <div className="max-w-5xl text-center">
         <div className="mx-auto mb-8 w-fit rounded-full border border-zinc-800 bg-zinc-950/80 px-4 py-2 text-sm text-zinc-400">
@@ -67,9 +68,13 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="mt-16 text-sm text-zinc-600">
-          Scroll to explore ↓
-        </div>
+        <a
+          href="#about"
+          className="mx-auto mt-16 flex w-fit flex-col items-center gap-2 text-xs uppercase tracking-[0.25em] text-zinc-700 transition-colors hover:text-zinc-400"
+        >
+          <span>Explore</span>
+          <span className="text-base leading-none">↓</span>
+        </a>
       </div>
     </main>
   );
