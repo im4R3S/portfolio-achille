@@ -1,9 +1,49 @@
+const links = [
+  {
+    label: "GitHub",
+    href: "https://github.com/im4R3S",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/",
+  },
+  {
+    label: "Email",
+    href: "mailto:achille.balme@gmail.com",
+  },
+];
+
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-900 px-6 py-8">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 text-sm text-zinc-600 sm:flex-row sm:items-center sm:justify-between">
-        <p>© 2026 Achille Balme. All rights reserved.</p>
-        <p>Built with Next.js, TypeScript, Tailwind CSS and Vercel.</p>
+    <footer className="border-t border-zinc-900 px-6 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p className="text-lg font-semibold tracking-tight text-white">
+            Achille Balme
+          </p>
+          <p className="mt-2 text-sm text-zinc-500">Software Developer</p>
+        </div>
+
+        <div className="flex flex-col gap-4 md:items-end">
+          <div className="flex flex-wrap gap-5 text-sm text-zinc-500">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+                className="transition-colors hover:text-white"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+
+          <p className="text-sm text-zinc-600">
+            © 2026 Achille Balme. Built with Next.js, TypeScript, Tailwind CSS
+            and Vercel.
+          </p>
+        </div>
       </div>
     </footer>
   );
