@@ -1,3 +1,4 @@
+import MotionSection from "@/components/MotionSection";
 const links = [
   {
     label: "Email",
@@ -18,7 +19,8 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-28">
+    <MotionSection>
+      <section id="contact" className="px-6 py-28">
       <div className="mx-auto max-w-6xl">
         <div className="rounded-3xl border border-zinc-800 bg-zinc-950/70 p-8 md:p-16">
           <div className="grid gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
@@ -64,6 +66,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+    </MotionSection>
   );
 }

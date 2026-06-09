@@ -1,3 +1,4 @@
+import MotionSection from "@/components/MotionSection";
 const featuredProject = {
   title: "Global Point-of-Sale Management System",
   company: "Jaeger-LeCoultre",
@@ -32,7 +33,8 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="px-6 py-28">
+    <MotionSection>
+      <section id="projects" className="px-6 py-28">
       <div className="mx-auto max-w-6xl">
         <div className="max-w-3xl">
           <p className="text-sm font-medium uppercase tracking-[0.3em] text-zinc-500">
@@ -91,11 +93,10 @@ export default function Projects() {
                 {featuredProject.impact.map((item) => (
                   <div
                     key={item}
-                    className="flex gap-3 rounded-2xl border border-zinc-800 bg-zinc-950/80 p-4"
-                  >
-                    <span className="mt-1 h-2 w-2 rounded-full bg-zinc-500" />
+                    className="rounded-2xl border border-zinc-800 bg-zinc-950/80 p-4"
+                    >
                     <p className="text-sm leading-6 text-zinc-300">{item}</p>
-                  </div>
+                    </div>
                 ))}
               </div>
             </div>
@@ -135,6 +136,7 @@ export default function Projects() {
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </MotionSection>
   );
 }
