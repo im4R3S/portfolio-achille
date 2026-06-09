@@ -25,14 +25,14 @@ export default function Hero() {
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
             href="#projects"
-            className="rounded-lg bg-white px-6 py-3 font-medium text-black transition hover:-translate-y-0.5 hover:opacity-90"
+            className="rounded-lg bg-white px-6 py-3 font-medium text-black transition hover:opacity-90"
           >
             View projects
           </a>
 
           <a
             href="#contact"
-            className="rounded-lg border border-zinc-700 px-6 py-3 font-medium text-white transition hover:-translate-y-0.5 hover:border-zinc-500"
+            className="rounded-lg border border-zinc-700 px-6 py-3 font-medium text-white transition hover:border-zinc-500"
           >
             Contact me
           </a>
@@ -51,17 +51,17 @@ export default function Hero() {
         </div>
 
         <div className="mx-auto mt-14 grid max-w-3xl gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:-translate-y-1 hover:border-zinc-600">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:border-zinc-600">
             <p className="text-2xl font-bold">JLC</p>
             <p className="mt-1 text-sm text-zinc-500">Industrial IT experience</p>
           </div>
 
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:-translate-y-1 hover:border-zinc-600">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:border-zinc-600">
             <p className="text-2xl font-bold">CFC</p>
             <p className="mt-1 text-sm text-zinc-500">Application development</p>
           </div>
 
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:-translate-y-1 hover:border-zinc-600">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950/70 p-5 transition hover:border-zinc-600">
             <p className="text-2xl font-bold">2025</p>
             <p className="mt-1 text-sm text-zinc-500">Certified developer</p>
           </div>
